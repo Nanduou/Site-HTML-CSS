@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft - O Jogo</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
-    <section>
+    <section class="pagina-formulario">
+
         <div class="circle"></div>
+
         <header>
-            <a href="#"><img src="img/logoMine.png" alt="LogoMine" class="logo"></a>
+            <a href="index.html">
+                <img src="img/logoMine.png" alt="Logo Minecraft" class="logo">
+            </a>
+
             <nav class="navegation">
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -20,15 +26,93 @@
                 </ul>
             </nav>
         </header>
+
         <div class="container">
             <div class="text">
                 <h2>O QUE É<br><span>MINECRAFT?</span></h2>
-                <p>O Minecraft é um jogo eletrônico de construção e sobrevivência em mundo aberto, desenvolvido pela Mojang Studios. Lançado oficialmente em 2011, o jogo permite aos jogadores explorar, construir e interagir com um ambiente virtual composto por blocos tridimensionais. Com uma comunidade ativa e atualizações constantes, o Minecraft se tornou um fenômeno cultural, oferecendo modos de jogo variados, como sobrevivência, criativo e aventura, além de possibilitar a criação de mods e servidores personalizados.</p>
+
+                <p>
+                    O Minecraft é um jogo eletrônico de construção e
+                    sobrevivência em mundo aberto, desenvolvido pela
+                    Mojang Studios. Lançado oficialmente em 2011, o jogo
+                    permite aos jogadores explorar, construir e interagir
+                    com um ambiente virtual composto por blocos
+                    tridimensionais. Com uma comunidade ativa e
+                    atualizações constantes, o Minecraft se tornou um
+                    fenômeno cultural, oferecendo modos de jogo variados,
+                    como sobrevivência, criativo e aventura, além de
+                    possibilitar a criação de mods e servidores
+                    personalizados.
+                </p>
             </div>
         </div>
-            <footer>
-                <p>Desenvolvido por Fernando Filho</p>
-            </footer>
+
+        <!-- FORMULÁRIO -->
+        <div class="formulario">
+
+            <h2>FAÇA PARTE DO MUNDO <span>MINECRAFT!</span></h2>
+
+            <p>
+                Conte um pouco sobre você e sua experiência no jogo.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="campo">
+                    <label for="nome">Seu nome:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">Seu e-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="modo">Modo de jogo favorito:</label>
+
+                    <select id="modo" name="modo" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="sobrevivencia">Sobrevivência</option>
+                        <option value="criativo">Criativo</option>
+                        <option value="aventura">Aventura</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">
+                        O que você mais gosta no Minecraft?
+                    </label>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="4"
+                        placeholder="Escreva sua resposta..."
+                    ></textarea>
+                </div>
+
+                <button type="submit">Enviar respostas</button>
+
+            </form>
+        </div>
+
+        <footer>
+            <p>Desenvolvido por Fernando Filho</p>
+        </footer>
+
     </section>
 </body>
 </html>
